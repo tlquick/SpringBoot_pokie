@@ -100,7 +100,9 @@ public class Pokie implements Serializable{
         payouts += amount;
         if ( amount > 0)
             setMsg("Congratulations! You won $" + ((int)amount));
-        else
+        else if( betLines > 0 && player.getBet() > 0)
+        	setMsg( "Current Bet is $" +  ((int)(betLines*player.getBet())) + " " + DEFAULT_MSG);
+        else 
         	setMsg(DEFAULT_MSG);
     }
     public double getPayOut()

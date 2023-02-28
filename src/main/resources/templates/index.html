@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<title>Cherry Bomb</title>
+<link th:href="@{/styles/main.css}" rel="stylesheet" type="text/css; charset=utf-8" >
+
+<script type="text/javascript" th:src="@{/webjars/htmx.org/dist/htmx.min.js}"></script>
+
+</head>
+<body >
+<div class="container"  id="display" hx-boost="true"> 
+	<img src="../static/images/CherryBomb.JPG" alt="Title:CherryBomb" th:src="@{'/images/CherryBomb.JPG'}">
+	<div class="balance">
+		<p>Player Balance: $<strong th:text="${playerBalance}">100000</strong>
+		
+			<a th:href="@{/addCredit}" ><button type="button" id="highlight" class="btn stdBtn">Add $20</button></a>
+			<a th:href="@{/collect}"  ><button type="button" id="highlight" class="btn stdBtn">Collect </button></a> 
+		</p>	
+			<p th:text="${msg}" class="ascent" > Play Now </p>
+		
+		<table class="table" >
+	      <tr th:each="row: ${images}">
+	          <td th:each="value: ${row}">
+	                  <img th:src="@{${'/images/' + value}}" alt="Reel result" src="../static/images/Jackpot.JPG">
+	          </td>
+	      </tr>
+	  	</table>
+      	<div class="lines" >
+	      	<a th:href="@{/lines/{id}(id=1)}" ><button type="button" id="highlight" class="btn stdBtn">1 Line</button></a>
+	      	<a th:href="@{/lines/{id}(id=2)}" ><button type="button" id="highlight" class="btn stdBtn">2 Lines</button></a>
+	      	<a th:href="@{/lines/{id}(id=3)}" ><button type="button" id="highlight" class="btn stdBtn">3 Lines</button></a>
+      	</div>
+      	<div class="credits" >
+	      	<a th:href="@{/credits/{id}(id=1)}" ><button type="button" id="highlight" class="btn stdBtn">1 Credit</button></a>
+	      	<a th:href="@{/credits/{id}(id=5)}" ><button type="button" id="highlight" class="btn stdBtn">5 Credits</button></a>
+	      	<a th:href="@{/credits/{id}(id=10)}" ><button type="button" id="highlight" class="btn stdBtn">10 Credits</button></a>
+  		</div>
+  		<p>
+  	  <div>
+         <a th:href="@{/spin}" ><button type="button" id="highlight" class="btn spinBtn">Spin</button></a>
+      </div>
+      <div>
+	    <p> TurnOver: <strong th:text="${turnOver}">100000</strong>
+	        PayOuts: <strong th:text="${payOuts}">0</strong>
+	        Spins: <strong th:text="${spins}">1000</strong></p>
+   	  </div>
+   </div> 
+   </div>
+</body>
+</html>
