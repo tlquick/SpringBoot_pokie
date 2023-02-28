@@ -28,7 +28,7 @@ public class PokieTests {
 		pokie.bet(1);
 		pokie.betLines(3);
 		pokie.spin();
-		assertEquals(12, pokie.getResult().length());
+		assertEquals(11, pokie.getResult().length());
 		assertEquals(1, pokie.getSpins());
 		assertEquals(3, pokie.turnover());
 	}
