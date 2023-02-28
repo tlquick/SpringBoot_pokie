@@ -27,6 +27,9 @@ Clone or fork the repo. Open Eclipse and import maven project. Run mvn clean ins
 
 ## Example Use
 The Pokie app loads, displaying the Pokie app on port 8080<br>
- 
+![PokieStart](/docs/pokie_load.jpg?raw=true "Home Page") <br>
+The user adds credits, selects the number of lines and credits, then clicks Spin.
+The web app randomly determines the result of the spin, calcuating any payouts and updates the Player balance
+![PokieRun](/docs/pokie_example.jpg?raw=true "Example") <br>. 
 ## Live Site
 TBD<br>
