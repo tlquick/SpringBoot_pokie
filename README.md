@@ -14,7 +14,7 @@ This project will also include basic JUnit tests to ensure each iteration does n
 <b>Tasks to complete: </b><br>
 Step 1: get existing models to compile and run in Springboot starter, write some unit tests in JUnit & rewrite for loops to streams - except where objects change<br>
 Step 2: write the front end in thymeleaf <br>
-Step 3: create a docker canotainer <br>
+Step 3: create a docker container <br>
 Step 4: deploy to cloud <br>
 <br>
 ## Technologies
