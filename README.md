@@ -30,6 +30,16 @@ http://localhost:8080/
 ```
 Dockerfile has been added to deploy to any cloud provider. I used Render, connecting my repository to Render dashboard. <br >
 Render uses the dockerfile to build the image and deploy automatically. <br>
+If you have Docker Desktop and a Docker Hub account, you can build your own image using:
+```
+mvn -f pom.xml install 
+docker login
+docker build -t <dockerHubUser>/springboot_pokie:<tag> .
+docker run -p 8080:8080 <dockerHubUser>/springboot_pokie:<tag>
+docker push <dockerHubUser>/springboot_pokie:<tag>
+
+```
+Or you can use mine from Dcoker Hub: tlquick/springboot_pokie:0.0.1-SNAPSHOT
 
 ## Example Use
 The Pokie app loads, displaying the Pokie app on port 8080<br>
@@ -38,4 +48,4 @@ The user adds credits, selects the number of lines and credits, then clicks Spin
 The web app randomly determines the result of the spin, calcuating any payouts and updates the Player balance
 ![PokieRun](/docs/pokie_example.jpg?raw=true "Example") <br>. 
 ## Live Site
-TBD<br>
+https://springboot-pokie.onrender.com <br>
