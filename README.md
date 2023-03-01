@@ -22,8 +22,14 @@ Spring Boot 3.0, Maven, Java 17, JUnit, H2 database with multiple tables, Hibern
 <br>
 POM dependancies: spring-boot-starter-parent, spring-boot-starter-web, spring-boot-starter-web-services, spring-boot-starter-thymeleaf, spring-boot-starter-test, junit-jupiter-api <br>
 ## Setup
-Docker Desktop needs to be installed on the target environment.  <br>
+
 Clone or fork the repo. Open Eclipse and import maven project. Run mvn clean install <br>
+Run locally and test on port 8080 eg 
+```
+http://localhost:8080/ 
+```
+Dockerfile has been added to deploy to any cloud provider. I used Render, connecting my repository to Render dashboard. <br >
+Render uses the dockerfile to build the image and deploy automatically. <br>
 
 ## Example Use
 The Pokie app loads, displaying the Pokie app on port 8080<br>
