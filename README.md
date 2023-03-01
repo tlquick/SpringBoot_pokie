@@ -12,7 +12,7 @@ A project that takes a small Java GUI enterprise application (from an existing B
 The aim of this project is to transform an enterprise application into a web app that can be deployed in a Docker container. <br>
 This project will also include basic JUnit tests to ensure each iteration does not break the product. Thymeleaf will be used to make the front end. <br>
 <b>Tasks to complete: </b><br>
-Step 1: get existing models to compile and run in Springboot starter, write some unit tests in JUnit & rewrite for loops to streams - except where objects change<br>
+Step 1: get existing models to compile and run in Springboot starter, write some unit tests in JUnit & rewrite for loops to streams - except where objects change or streams becomes overly complex<br>
 Step 2: write the front end in thymeleaf <br>
 Step 3: write tests for the controller in Mockito <br>
 Step 4: create a docker container <br>
