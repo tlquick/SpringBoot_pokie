@@ -3,8 +3,6 @@ package com.tlquick.pokie.models;
 import com.tlquick.pokie.models.utils.Record;
 import com.tlquick.pokie.models.utils.Symbol;
 
-import lombok.ToString;
-
 public class Line extends Record {
 	private String result = "JJJ";
 
