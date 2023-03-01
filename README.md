@@ -39,7 +39,7 @@ docker run -p 8080:8080 <dockerHubUser>/springboot_pokie:<tag>
 docker push <dockerHubUser>/springboot_pokie:<tag>
 
 ```
-Or you can use mine from Dcoker Hub: tlquick/springboot_pokie:0.0.1-SNAPSHOT
+Or you can use mine from Docker Hub: tlquick/springboot_pokie:0.0.1-SNAPSHOT
 
 ## Example Use
 The Pokie app loads, displaying the Pokie app on port 8080<br>
